@@ -19,7 +19,7 @@ const getApiString = async () => {
 
 const getPositionData = () => {
     const failed = { json: () => '' }
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
         getApiString()
             .then(str => str? fetch(str) : failed)
             .then(resp => resp.json())
