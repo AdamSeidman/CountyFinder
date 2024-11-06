@@ -1,5 +1,3 @@
-const API_KEY = '672ab43ac89ae315617730tvmd47215'
-
 let accuracy = 0
 
 const getCoords = () => {
